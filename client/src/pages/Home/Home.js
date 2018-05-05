@@ -38,7 +38,8 @@ class Home extends Component {
 
   handleArticleSave = id => {
     const article = this.state.articles.find(article => article._id === id);
-    API.saveArticle(article).then(res => this.getArticles());
+    API.saveArticle(article)
+       .then(res => this.getArticles());
   };
 
   render() {
