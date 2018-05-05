@@ -20,7 +20,7 @@ class Saved extends Component {
       .catch(err => console.log(err));
   };
 
-  handleArticleDelete = id => {
+  handleDeleteArticle = id => {
     //????
   };
 
