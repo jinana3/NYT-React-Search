@@ -5,6 +5,6 @@ const apinytRoutes = require("./apinyt");
 // NYT routes
 router.use("/articles", articleRoutes);
 
-router.use("/apinyt", apinytRoutes);
+router.use("/nytreact", apinytRoutes);
 
 module.exports = router;
