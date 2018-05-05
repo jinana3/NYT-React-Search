@@ -16,14 +16,12 @@ module.exports = {
         db.Article
           .find()
           .then(dbArticles =>
-            response.data.response.docs.filter(article =>
-              dbArticles.every(
-                dbArticle => dbArticle._id !== article._id
+            response.data.response.docs.filter(
+          dbArticle._id !== article._id
               )
             )
           )
           .then(articles => res.json(articles))
-          .catch(err => res.status(422).json(err));
       });
   }
 };
