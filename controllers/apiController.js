@@ -18,7 +18,7 @@ module.exports = {
           .then(dbArticles =>
             response.data.response.docs.filter(article =>
               dbArticles.every(
-                dbArticle => dbArticle._id.toString() !== article._id
+                dbArticle => dbArticle._id !== article._id
               )
             )
           )
