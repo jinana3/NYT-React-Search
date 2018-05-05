@@ -1,9 +1,6 @@
 const axios = require("axios");
 const db = require("../models");
 
-// Defining methods for the nytController
-
-//returns only the entries we haven't already saved (in books, this is in seedDB or somethings)
 module.exports = {
   findAll: function(req, res) {
     const params = Object.assign( //have no idea what this does
