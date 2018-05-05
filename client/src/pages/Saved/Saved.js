@@ -21,7 +21,7 @@ class Saved extends Component {
   };
 
   handleArticleDelete = id => {
-    API.deleteArticle(id).then(res => this.getSavedArticles());
+    //????
   };
 
   render() {}
